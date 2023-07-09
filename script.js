@@ -8,11 +8,11 @@ Array.from(buttons).forEach((button)=>(
         else if(e.target.innerHTML == '='){
             string = eval(string);
         }
-        else if(e.target.innerHTML =='M+'){
-            if(string < 0) string*=(-1);
+        else if(e.target.innerHTML =='+-'){
+            string*=(-1);
         }
-        else if(e.target.innerHTML =='M-'){
-            if(string > 0) string*=(-1);
+        else if(e.target.innerHTML =='%'){
+            string /= 100;
         }
         else{
             string = string + e.target.innerHTML;
